@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function addToCart(el) {
   let card = el.nativeEvent.path[2];
@@ -13,9 +13,17 @@ function addToCart(el) {
 function Card() {
   const [data, setData] = useState([]);
 
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/components/shoes.js"
+    )
+      .then((response) => response.json())
+      .then(setData);
+  });
+
   if (!data || !data.length) return null;
 
-  Shoes.map((shoe) => {
+  /* Shoes.map((shoe) => {
     return (
       <section className={shoe.class}>
         <div className="card">
@@ -32,7 +40,7 @@ function Card() {
         </div>
       </section>
     );
-  });
+  }); */
 }
 
 export default Card;
