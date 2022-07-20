@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Adidas NMD R1",
+    "price": 200,
+    "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/adidasnmd.png",
+    "color": "gray"
+  },
+  {
+    "id": 2,
+    "name": "Nike Air Max 95",
+    "price": 150,
+    "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/airmaxplus.png",
+    "color": "blue"
+  },
+   {
+    "id": 3,
+    "name": "Nike Air Max 90",
+    "price": 90,
+    "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/airmax90.png",
+    "color": "white"
+  },
+   {
+    "id": 4,
+    "name": "Nike Air Jordan",
+    "price": 145,
+    "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/airjordan.png",
+    "color": "red"
+  },
+   {
+    "id": 5,
+    "name": "Nike Air Max Off-White",
+    "price": 500,
+    "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/airmaxoffwhite.png",
+    "color": "bege"
+  },
+   {
+    "id": 6,
+    "name": "Balenciaga",
+    "price": 450,
+    "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/balenciaga.png",
+    "color": "black"
+  }
+]
