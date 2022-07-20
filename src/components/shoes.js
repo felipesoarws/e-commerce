@@ -14,5 +14,3 @@ const Shoes = [
     class: "blue",
   },
 ];
-
-export default Shoes;

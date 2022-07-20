@@ -1,4 +1,3 @@
-import Shoes from "./shoes";
 import { useState } from "react";
 
 function addToCart(el) {
