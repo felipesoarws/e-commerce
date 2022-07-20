@@ -32,13 +32,13 @@
     "name": "Nike Air Max Off-White",
     "price": 500,
     "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/airmaxoffwhite.png",
-    "color": "blue"
+    "color": "bege"
   },
    {
     "id": 6,
     "name": "Balenciaga",
     "price": 450,
     "image": "https://raw.githubusercontent.com/felipesoarws/e-commerce/main/src/images/balenciaga.png",
-    "color": "blue"
+    "color": "black"
   },
 ]
