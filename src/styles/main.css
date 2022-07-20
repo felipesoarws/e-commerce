@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111f2a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/bg.jpg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+body .container {
+  scroll-behavior: smooth;
+}
+
+body .arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .arrows .left,
+body .arrows .right {
+  font-size: 4rem;
+  color: black;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  -webkit-filter: drop-shadow(0 0 1px white);
+          filter: drop-shadow(0 0 1px white);
+}
+
+body .arrows .left:hover,
+body .arrows .right:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body .cards {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  overflow-x: scroll;
+  height: 21.6rem;
+  scroll-behavior: smooth;
+  width: 85vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .cards::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  body .cards {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  body .cards {
+    width: 40vw;
+  }
+}
+
+body .cards section {
+  margin: 2rem 1rem;
+  border-radius: 2rem;
+  height: 10rem;
+  width: 9rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem 7.5rem;
+  overflow: hidden;
+}
+
+body .cards section .price {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+body .cards section:hover {
+  height: 19rem;
+}
+
+body .cards section:hover button {
+  -webkit-transform: translateY(-2.2rem);
+          transform: translateY(-2.2rem);
+}
+
+body .cards section:hover img {
+  -webkit-transform: rotate(-7deg) translateX(-0.3rem) translateY(-1.6rem) scale(1.1);
+          transform: rotate(-7deg) translateX(-0.3rem) translateY(-1.6rem) scale(1.1);
+}
+
+body .cards section:hover .price {
+  -webkit-transform: translateY(1.3rem);
+          transform: translateY(1.3rem);
+}
+
+body .cards section img {
+  width: 13rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: rotate(-7deg) translateX(-0.3rem) translateY(-1.6rem);
+          transform: rotate(-7deg) translateX(-0.3rem) translateY(-1.6rem);
+}
+
+body .cards section button {
+  padding: 0.8rem 1.5rem;
+  border: 0;
+  outline: 0;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translateY(5rem);
+          transform: translateY(5rem);
+}
+
+body .cards section .f-line {
+  width: 100%;
+}
+
+body .cards section .f-line .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+body .cards section .f-line .price small {
+  color: white;
+  font-size: 1rem;
+}
+
+body .cards section .f-line .price h2,
+body .cards section .f-line .price small {
+  font-family: "Montserrat", sans-serif;
+}
+
+body .cards section .f-line .price h2 {
+  color: white;
+  font-size: 2.6rem;
+}
+
+body .cards section.blue {
+  background: linear-gradient(-9deg, #3845ff 46%, #2a2aaf 48%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(56, 69, 255, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(56, 69, 255, 0.3);
+}
+
+body .cards section.blue:hover {
+  -webkit-box-shadow: 0 0 1px 2px #3845ff;
+          box-shadow: 0 0 1px 2px #3845ff;
+}
+
+body .cards section.blue button {
+  background-color: #3232f1;
+  color: white;
+}
+
+body .cards section.blue button:hover {
+  -webkit-box-shadow: 0 0 0px 1px white;
+          box-shadow: 0 0 0px 1px white;
+}
+
+body .cards section.red {
+  background: linear-gradient(-9deg, #eb465a 53%, #b31225 55%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(235, 70, 90, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(235, 70, 90, 0.3);
+}
+
+body .cards section.red:hover {
+  -webkit-box-shadow: 0 0 1px 2px #eb465a;
+          box-shadow: 0 0 1px 2px #eb465a;
+}
+
+body .cards section.red button {
+  background-color: #d12035;
+  color: white;
+}
+
+body .cards section.red button:hover {
+  -webkit-box-shadow: 0 0 0px 1px white;
+          box-shadow: 0 0 0px 1px white;
+}
+
+body .cards section.bege {
+  background: linear-gradient(-9deg, #bda798 53%, #988679 55%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(189, 167, 152, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(189, 167, 152, 0.3);
+}
+
+body .cards section.bege:hover {
+  -webkit-box-shadow: 0 0 1px 2px #bda798;
+          box-shadow: 0 0 1px 2px #bda798;
+}
+
+body .cards section.bege button {
+  background-color: #8a796c;
+  color: white;
+}
+
+body .cards section.bege button:hover {
+  -webkit-box-shadow: 0 0 0px 1px white;
+          box-shadow: 0 0 0px 1px white;
+}
+
+body .cards section.white {
+  background: linear-gradient(-9deg, #cbcfc4 53%, #c7cfcf 55%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(203, 207, 196, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(203, 207, 196, 0.3);
+}
+
+body .cards section.white:hover {
+  -webkit-box-shadow: 0 0 1px 2px #cbcfc4;
+          box-shadow: 0 0 1px 2px #cbcfc4;
+}
+
+body .cards section.white button {
+  background-color: #abc2c0;
+  color: white;
+}
+
+body .cards section.white button:hover {
+  -webkit-box-shadow: 0 0 0px 1px white;
+          box-shadow: 0 0 0px 1px white;
+}
+
+body .cards section.gray {
+  background: linear-gradient(-9deg, #838585 53%, #6a6b6b 55%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(131, 133, 133, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(131, 133, 133, 0.3);
+}
+
+body .cards section.gray:hover {
+  -webkit-box-shadow: 0 0 1px 2px #838585;
+          box-shadow: 0 0 1px 2px #838585;
+}
+
+body .cards section.gray button {
+  background-color: #6a6b6b;
+  color: white;
+}
+
+body .cards section.gray button:hover {
+  -webkit-box-shadow: 0 0 0px 1px white;
+          box-shadow: 0 0 0px 1px white;
+}
+
+body .cards section.black {
+  background: linear-gradient(-9deg, #3c3c3a 53%, #333237 55%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(60, 60, 58, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(60, 60, 58, 0.3);
+}
+
+body .cards section.black:hover {
+  -webkit-box-shadow: 0 0 1px 2px #3c3c3a;
+          box-shadow: 0 0 1px 2px #3c3c3a;
+}
+
+body .cards section.black button {
+  background-color: #333237;
+  color: white;
+}
+
+body .cards section.black button:hover {
+  -webkit-box-shadow: 0 0 0px 1px white;
+          box-shadow: 0 0 0px 1px white;
+}
+/*# sourceMappingURL=main.css.map */
