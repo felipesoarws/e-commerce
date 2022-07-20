@@ -38,7 +38,7 @@ function Cards() {
             <div className="card">
               <div className="f-line">
                 <div className="price">
-                  <h2>{price}</h2>
+                  <h2>${price}</h2>
                   <small>{name}</small>
                 </div>
               </div>
