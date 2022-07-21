@@ -42,6 +42,21 @@ body header {
   position: relative;
 }
 
+body header a {
+  color: white;
+}
+
+body header .me p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+}
+
+body header .me p span {
+  color: #3845ff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
 body header svg {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
@@ -372,14 +387,14 @@ body .cards section.bege button:hover {
 }
 
 body .cards section.white {
-  background: linear-gradient(-9deg, #cbcfc4 53%, #c7cfcf 55%);
-  -webkit-box-shadow: 0 2px 10px 5px rgba(203, 207, 196, 0.3);
-          box-shadow: 0 2px 10px 5px rgba(203, 207, 196, 0.3);
+  background: linear-gradient(-9deg, #ced1ca 53%, #cacfcf 55%);
+  -webkit-box-shadow: 0 2px 10px 5px rgba(206, 209, 202, 0.3);
+          box-shadow: 0 2px 10px 5px rgba(206, 209, 202, 0.3);
 }
 
 body .cards section.white:hover {
-  -webkit-box-shadow: 0 0 1px 2px #cbcfc4;
-          box-shadow: 0 0 1px 2px #cbcfc4;
+  -webkit-box-shadow: 0 0 1px 2px #ced1ca;
+          box-shadow: 0 0 1px 2px #ced1ca;
 }
 
 body .cards section.white button {

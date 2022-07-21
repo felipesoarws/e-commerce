@@ -1,10 +1,5 @@
 // shoes
-import AirMax from "../images/airmaxplus.png";
-import AirJordan from "../images/airjordan.png";
-import AirMaxOffWhite from "../images/airmaxoffwhite.png";
-import AirMax90 from "../images/airmax90.png";
-import AdidasNmd from "../images/adidasnmd.png";
-import Balenciaga from "../images/balenciaga.png";
+
 import { useEffect, useState } from "react";
 
 function addToCart(el) {
@@ -44,7 +39,9 @@ function Cards() {
               </div>
               <div>
                 <img src={image} alt="shoe" className="shoe" />
-                <button onClick={addToCart}>add to cart</button>
+                <button onClick={addToCart} className="btn">
+                  add to cart
+                </button>
               </div>
             </div>
           </section>
